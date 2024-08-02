@@ -1,0 +1,2 @@
+.viewAll { gap: 0.5rem; color: var(--mantine-color-dark-1); text-decoration: none; transition: all 0.5s ease-in-out; }
+.viewAll:hover { text-decoration: underline; scale: 1.05; }
