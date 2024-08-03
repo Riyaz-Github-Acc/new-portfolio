@@ -3,7 +3,7 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: flex-start;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .card {
@@ -30,5 +30,5 @@
 }
 
 @media (max-width: $mantine-breakpoint-md) {
-  .projectsContainer { grid-template-columns: 1fr; }
+  .projectsContainer { grid-template-columns: 1fr; gap: 1rem; }
 }

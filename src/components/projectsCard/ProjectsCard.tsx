@@ -37,21 +37,21 @@ const badges = [
 
 const projectData: ProjectDataProps[] = [
   {
-    image: '/assets/images/mern-e-shop-admin.png',
+    image: '/assets/images/projects/mern-e-shop-admin.png',
     title: 'MernEShop Admin',
     techStack: 'MERN',
     description: 'MERNeShop Admin Dashboard serves as a centralized hub, providing real-time insights and empowering businesses to make informed decisions.',
     badges: ['JavaScript', 'TypeScript', 'React', 'NextJS', 'AWS']
   },
   {
-    image: '/assets/images/mern-e-shop.png',
+    image: '/assets/images/projects/mern-e-shop.png',
     title: 'MernEShop',
     techStack: 'MERN',
     description: "The Ecommerce Website let's you discover a wide array of products, effortlessly browse, apply advanced filters, and enjoy a seamless checkout experience.",
     badges: ['JavaScript', 'TypeScript', 'React', 'NodeJS', 'AWS', 'Docker']
   },
   {
-    image: '/assets/images/recipe-app.png',
+    image: '/assets/images/projects/recipe-app.png',
     title: 'Recipe App',
     techStack: 'React',
     description: 'A user-friendly recipe app where you can post, save, and delete recipes, build your collection, and discover new recipes from others for a seamless cooking experience.',
@@ -88,8 +88,8 @@ export function ProjectsCard() {
   return (
     <CustomScrollArea>
       <section className={classes.projectsContainer}>
-        {projectData.map((project, i) => (
-          <Card key={i} withBorder radius="md" p="md" className={classes.card}>
+        {projectData.map((project) => (
+          <Card key={project.title} withBorder radius="md" p="md" className={classes.card}>
             <Card.Section>
               <Image src={project.image} alt={project.title} height={180} />
             </Card.Section>
