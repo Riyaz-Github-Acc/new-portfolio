@@ -1,13 +1,16 @@
+.heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 .inner {
   display: flex;
   justify-content: space-between;
-  padding-top: calc(var(--mantine-spacing-xl) * 4);
-  padding-bottom: calc(var(--mantine-spacing-xl) * 4);
-}
-
-.content {
-  max-width: rem(480px);
-  margin-right: calc(var(--mantine-spacing-xl) * 3);
+  align-items: center;
+  gap: 3rem;
+  width: 90%;
 }
 
 .title {
@@ -31,6 +34,7 @@
 }
 
 @media (max-width: $mantine-breakpoint-md) {
+  .inner { flex-direction: column; justify-content: space-between; gap: 2rem; width: 100%; }
   .content { max-width: 100%; margin-right: 0; }
   /* .image { display: none; } */
 }
