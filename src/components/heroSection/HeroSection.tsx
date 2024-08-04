@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Image, Title, Button, Group, Text, List, ThemeIcon, rem } from '@mantine/core';
-import { IconCheck } from '@tabler/icons-react';
+import { Image, Title, Button, Group, Text } from '@mantine/core';
 import CustomScrollArea from '../CustomScrollArea';
 
 import classes from './HeroSection.module.css';
@@ -16,7 +15,7 @@ function useMobile() {
       setIsMobile(window.innerWidth <= 768);
     }
 
-    handleResize(); 
+    handleResize();
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -32,48 +31,21 @@ export function HeroSection() {
     <section className={classes.heroContainer}>
       <div className={classes.inner}>
         <div className={classes.content}>
-          <Title className={classes.title}>
-            A <span className={classes.highlight}>modern</span> React <br /> components library
-          </Title>
+          <Title className={classes.title}>Hi, I'm <span className={classes.highlight}>Riyaz</span></Title>
+          <Title className={classes.secondary}>Full Stack Developer</Title>
           <Text c="dimmed" mt="md">
-            Build fully functional accessible web applications faster than ever – Mantine includes
-            more than 120 customizable components and hooks to cover you in any situation
+            A highly motivated and skilled MERN Stack Developer with a passion for building innovative and user-friendly web applications. Proven ability to learn new technologies quickly and apply them to real-world projects. Strong communication and problem-solving skills.
           </Text>
 
-          <List
-            mt={30}
-            spacing="sm"
-            size="sm"
-            icon={
-              <ThemeIcon size={20} radius="xl">
-                <IconCheck style={{ width: rem(12), height: rem(12) }} stroke={1.5} />
-              </ThemeIcon>
-            }
-          >
-            <List.Item>
-              <b>TypeScript based</b> – build type safe applications, all components and hooks
-              export types
-            </List.Item>
-            <List.Item>
-              <b>Free and open source</b> – all packages have MIT license, you can use Mantine in
-              any project
-            </List.Item>
-            <List.Item>
-              <b>No annoying focus ring</b> – focus ring will appear only when user navigates with
-              keyboard
-            </List.Item>
-          </List>
-
           <Group mt={30}>
-            <Button radius="xl" size="md" className={classes.control}>
-              Get started
-            </Button>
-            <Button variant="default" radius="xl" size="md" className={classes.control}>
-              Source code
-            </Button>
+            <a href='/assets/images/Resume.pdf' target='_blank'>
+              <Button radius="xl" size="md" className={classes.control}>
+                Download Resume
+              </Button>
+            </a>
           </Group>
         </div>
-        <Image src='https://ui.mantine.dev/_next/static/media/image.9a65bd94.svg' className={classes.image} />
+        <Image src='/assets/images/hero-img.png' className={classes.image} />
       </div>
     </section>
   );
