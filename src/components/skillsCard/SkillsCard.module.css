@@ -1,0 +1,48 @@
+.skillsContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  border: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+}
+
+.imgContainer {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  border-radius: 1.25rem;
+  padding: 0.2rem;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: $mantine-breakpoint-xl) {
+  .skillsContainer { grid-template-columns: repeat(5, 1fr); }
+}
+
+@media (max-width: $mantine-breakpoint-lg) {
+  .skillsContainer { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: $mantine-breakpoint-md) {
+  .skillsContainer { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: $mantine-breakpoint-sm) {
+  .skillsContainer { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: $mantine-breakpoint-xs) {
+  .skillsContainer { grid-template-columns: 1fr; }
+}
