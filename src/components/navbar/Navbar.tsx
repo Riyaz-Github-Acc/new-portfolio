@@ -34,7 +34,7 @@ const menuLinks = [
   { icon: IconCode, link: '/skills', label: 'Skills' },
   { icon: IconCertificate, link: '/certificates', label: 'Certificates' },
   { icon: IconDeviceDesktopAnalytics, link: '/projects', label: 'Projects' },
-  { icon: IconPhone, link: '/contact', label: 'Contact' },
+  // { icon: IconPhone, link: '/contact', label: 'Contact' },
 ];
 
 export function Navbar() {
