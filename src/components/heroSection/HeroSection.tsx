@@ -31,7 +31,7 @@ export function HeroSection() {
     <section className={classes.heroContainer}>
       <div className={classes.inner}>
         <div className={classes.content}>
-          <Title className={classes.title}>Hi, I'm <span className={classes.highlight}>Riyaz</span></Title>
+          <Title className={classes.title}>Hi, I&apos;m <span className={classes.highlight}>Riyaz</span></Title>
           <Title className={classes.secondary}>Full Stack Developer</Title>
           <Text c="dimmed" mt="md">
             A highly motivated and skilled MERN Stack Developer with a passion for building innovative and user-friendly web applications. Proven ability to learn new technologies quickly and apply them to real-world projects. Strong communication and problem-solving skills.
@@ -45,7 +45,7 @@ export function HeroSection() {
             </a>
           </Group>
         </div>
-        <Image src='/assets/images/hero-img.png' className={classes.image} />
+        <Image src='/assets/images/hero-img.png' alt='hero-img' className={classes.image} />
       </div>
     </section>
   );
