@@ -7,6 +7,7 @@
   width: 3.75rem;
   display: flex;
   flex-direction: column;
+  z-index: 1000;
 }
 
 .navbarMain {
@@ -39,5 +40,24 @@
       background-color: var(--mantine-color-blue-light);
       color: var(--mantine-color-blue-light-color);
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: auto;
+    flex-direction: row;
+  }
+
+  .navbarMain {
+    height: auto;
+    flex: none;
+    padding: var(--mantine-spacing-sm);
+    border: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+    border-radius: rem(40px);
   }
 }

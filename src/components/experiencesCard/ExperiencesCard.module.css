@@ -30,7 +30,7 @@
 }
 
 .cardPoints {
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding-left: 1rem;
 }
 
@@ -49,4 +49,10 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.cardPoints ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
 }
