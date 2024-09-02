@@ -9,25 +9,25 @@ const certificateDetails = [
     institute: 'Udemy',
     title: 'React',
     img: '/assets/images/certificates/react-js.jpg',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus perspiciatis quae quo, quidem error cupiditate iste dolorum perferendis repudiandae provident!'
+    desc: 'Completed a comprehensive course on React, covering core concepts such as component-based architecture, hooks, state management, and advanced patterns.'
   },
   {
     institute: 'Udemy',
     title: 'Node, Express & MongoDB',
     img: '/assets/images/certificates/node-js.jpg',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus perspiciatis quae quo, quidem error cupiditate iste dolorum perferendis repudiandae provident!'
+    desc: 'Completed a course on Node.js, Express, and MongoDB, focusing on building scalable backend applications, designing RESTful APIs, and managing data effectively.'
   },
   {
     institute: 'Adoro Multimedia',
     title: 'UI/UX Design',
     img: '/assets/images/certificates/adoro-multimedia.jpg',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus perspiciatis quae quo, quidem error cupiditate iste dolorum perferendis repudiandae provident!'
+    desc: 'Completed a course on UI and UX design, mastering the principles of user-centered design and creating intuitive, aesthetically pleasing interfaces.'
   },
   {
     institute: 'Udemy',
     title: 'React Native',
     img: '/assets/images/certificates/react-native.jpg',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus perspiciatis quae quo, quidem error cupiditate iste dolorum perferendis repudiandae provident!'
+    desc: 'Completed a course on React Native, focusing on building cross-platform mobile applications, integrating native modules, and optimizing performance for both iOS and Android platforms.'
   },
 ]
 

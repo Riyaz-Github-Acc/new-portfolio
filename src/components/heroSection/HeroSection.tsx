@@ -34,7 +34,7 @@ export function HeroSection() {
           <Title className={classes.title}>Hi, I&apos;m <span className={classes.highlight}>Riyaz</span></Title>
           <Title className={classes.secondary}>Full Stack Developer</Title>
           <Text c="dimmed" mt="md">
-            A highly motivated and skilled MERN Stack Developer with a passion for building innovative and user-friendly web applications. Proven ability to learn new technologies quickly and apply them to real-world projects. Strong communication and problem-solving skills.
+            To leverage my expertise in full-stack development, including React, Node.js, Express, MongoDB, MySQL, PostgreSQL, and TypeScript, to design and build scalable, high-performance web applications. I aim to contribute to a dynamic team by delivering innovative, robust solutions that enhance user experiences and support business growth.
           </Text>
 
           <Group mt={30}>
@@ -45,7 +45,9 @@ export function HeroSection() {
             </a>
           </Group>
         </div>
-        <Image src='/assets/images/hero-img.png' alt='hero-img' className={classes.image} />
+        <div className={classes.image}>
+          <Image src='/assets/images/profile/profile-pic-1.jpg' alt='hero-img' />
+        </div>
       </div>
     </section>
   );

@@ -27,10 +27,15 @@
 }
 
 .image {
-  width: 100%;
+  width: 80%;
   height: rem(500px);
-  object-fit: contain;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  grid-column: 2 / 3; /* Place image in the second column */
+  justify-self: end; /* Align the image at the end horizontally */
+  align-self: end; /* Align the image at the end of the grid */
 }
+
 
 .highlight {
   position: relative;

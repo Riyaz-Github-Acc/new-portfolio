@@ -25,6 +25,12 @@
   font-weight: 700;
 }
 
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: $mantine-breakpoint-lg) {
   .projectsContainer { grid-template-columns: repeat(2, 1fr); }
 }

@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react';
-import { IconBrandAws, IconBrandDocker, IconBrandJavascript, IconBrandNextjs, IconBrandNodejs, IconBrandReact, IconBrandTypescript, IconBrandGithub, IconHexagonLetterE, IconWorld } from '@tabler/icons-react';
+import { IconBrandAws, IconBrandDocker, IconBrandJavascript, IconBrandNextjs, IconBrandNodejs, IconBrandReact, IconBrandTypescript, IconBrandGithub, IconHexagonLetterE, IconWorld, IconBrandRedux, IconBrandMongodb, IconBrandTailwind } from '@tabler/icons-react';
 import { ScrollArea, Tooltip } from '@mantine/core';
 import { Card, Image, Text, Group, Badge, Button, ActionIcon } from '@mantine/core';
 import CustomScrollArea from '../CustomScrollArea';
@@ -33,6 +33,9 @@ const badges = [
   { emoji: <IconHexagonLetterE size={15} color='var(--mantine-color-gray-5)' />, label: 'ExpressJS', color: 'var(--mantine-color-gray-5)' },
   { emoji: <IconBrandDocker size={15} color='var(--mantine-color-blue-7)' />, label: 'Docker', color: 'var(--mantine-color-blue-7)' },
   { emoji: <IconBrandAws size={15} color='var(--mantine-color-orange-6)' />, label: 'AWS', color: 'var(--mantine-color-orange-6)' },
+  { emoji: <IconBrandRedux size={15} color='var(--mantine-color-violet-9)' />, label: 'Redux', color: 'var(--mantine-color-orange-6)' },
+  { emoji: <IconBrandMongodb size={15} color='var(--mantine-color-green-9)' />, label: 'MongoDB', color: 'var(--mantine-color-orange-6)' },
+  { emoji: <IconBrandTailwind size={15} color='var(--mantine-color-blue-5)' />, label: 'Tailwind', color: 'var(--mantine-color-orange-6)' },
 ];
 
 const projectData: ProjectDataProps[] = [
@@ -41,21 +44,21 @@ const projectData: ProjectDataProps[] = [
     title: 'MernEShop Admin',
     techStack: 'MERN',
     description: 'MERNeShop Admin Dashboard serves as a centralized hub, providing real-time insights and empowering businesses to make informed decisions.',
-    badges: ['JavaScript', 'TypeScript', 'React', 'NextJS', 'AWS']
+    badges: ['JavaScript', 'React', 'Redux', 'Tailwind', 'NodeJS', 'ExpressJS', 'MongoDB']
   },
   {
     image: '/assets/images/projects/mern-e-shop.png',
     title: 'MernEShop',
     techStack: 'MERN',
     description: "The Ecommerce Website let's you discover a wide array of products, effortlessly browse, apply advanced filters, and enjoy a seamless checkout experience.",
-    badges: ['JavaScript', 'TypeScript', 'React', 'NodeJS', 'AWS', 'Docker']
+    badges: ['JavaScript', 'React', 'Redux', 'Tailwind', 'NodeJS', 'ExpressJS', 'MongoDB']
   },
   {
     image: '/assets/images/projects/recipe-app.png',
     title: 'Recipe App',
     techStack: 'React',
     description: 'A user-friendly recipe app where you can post, save, and delete recipes, build your collection, and discover new recipes from others for a seamless cooking experience.',
-    badges: ['JavaScript', 'TypeScript', 'React', 'NextJS', 'ExpressJS']
+    badges: ['JavaScript', 'React', 'NodeJS', 'ExpressJS', 'MongoDB']
   },
 ];
 
@@ -110,8 +113,8 @@ export function ProjectsCard() {
               </Group>
             </Card.Section>
 
-            <Group mt="xs">
-              <Button variant='light' radius="md" style={{ flex: 1 }}>More Details</Button>
+            <Group mt="xs" className={classes.links}>
+              {/* <Button variant='light' radius="md" style={{ flex: 1 }}>More Details</Button> */}
               <Tooltip label='Visit Website' position='top' transitionProps={{ duration: 0 }}>
                 <a href='https://merneshop-admin.netlify.app/' target='_blank'>
                   <ActionIcon variant="default" radius="md" size={36}><IconWorld stroke={1.5} /></ActionIcon>

@@ -24,16 +24,16 @@ const skills = [
   { icon: '/assets/images/tech/postgresql.png', name: 'PostgreSQL' },
   { icon: '/assets/images/tech/mysql.png', name: 'MySQL' },
   { icon: '/assets/images/tech/mongodb.png', name: 'MongoDB' },
-  { icon: '/assets/images/tech/redis.png', name: 'Redis' },
+  // { icon: '/assets/images/tech/redis.png', name: 'Redis' },
 
   { icon: '/assets/images/tech/linux.png', name: 'Linux' },
   { icon: '/assets/images/tech/docker.png', name: 'Docker' },
-  { icon: '/assets/images/tech/kubernetes.png', name: 'Kubernetes' },
-  { icon: '/assets/images/tech/aws.png', name: 'AWS' },
-  { icon: '/assets/images/tech/jenkins.png', name: 'Jenkins' },
+  // { icon: '/assets/images/tech/kubernetes.png', name: 'Kubernetes' },
+  // { icon: '/assets/images/tech/aws.png', name: 'AWS' },
+  // { icon: '/assets/images/tech/jenkins.png', name: 'Jenkins' },
   { icon: '/assets/images/tech/git.png', name: 'Git' },
   { icon: '/assets/images/tech/github.png', name: 'GitHub' },
-  { icon: '/assets/images/tech/prometheus.png', name: 'Prometheus' },
+  // { icon: '/assets/images/tech/prometheus.png', name: 'Prometheus' },
 ]
 
 const SkillsCard = () => {
