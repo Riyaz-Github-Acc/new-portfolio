@@ -21,7 +21,7 @@ const certificateDetails = [
     institute: 'Adoro Multimedia',
     title: 'UI/UX Design',
     img: '/assets/images/certificates/adoro-multimedia.jpg',
-    desc: 'Completed a course on UI and UX design, mastering the principles of user-centered design and creating intuitive, aesthetically pleasing interfaces.'
+    desc: 'Completed a course on UI and UX design, mastering the principles of user centered design and creating intuitive, aesthetically pleasing interfaces.'
   },
   {
     institute: 'Udemy',
