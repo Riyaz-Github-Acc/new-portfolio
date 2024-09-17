@@ -94,6 +94,7 @@ export function ProjectsCard() {
         {projectData.map((project) => (
           <Card key={project.title} withBorder radius="md" p="md" className={classes.card}>
             <Card.Section>
+              jj
               <Image src={project.image} alt={project.title} height={180} />
             </Card.Section>
 
