@@ -5,7 +5,7 @@ import CustomScrollArea from '../CustomScrollArea'
 import { Card, Image, Text } from '@mantine/core'
 
 import classes from './ExperiencesCard.module.css'
-import { IconCalendarMonth } from '@tabler/icons-react'
+// import { IconCalendarMonth } from '@tabler/icons-react'
 
 const ExperiencesCard = () => {
   return (
@@ -20,7 +20,7 @@ const ExperiencesCard = () => {
               {/* <Text>Blaze Web Services</Text> */}
               {/* <div className={classes.roleSec}> */}
               <Text className={classes.role}>Web Developer</Text>
-              <Text className={classes.duration}><IconCalendarMonth size={18} />Aug 2023 - Present</Text>
+              {/* <Text className={classes.duration}><IconCalendarMonth size={18} />Aug 2023 - Present</Text> */}
               {/* </div> */}
             </div>
           </div>
@@ -66,7 +66,7 @@ const ExperiencesCard = () => {
               {/* <Text>Blaze Web Services</Text> */}
               {/* <div className={classes.roleSec}> */}
               <Text className={classes.role}>Front End Developer</Text>
-              <Text className={classes.duration}><IconCalendarMonth size={18} />Aug 2022 - May 2023</Text>
+              {/* <Text className={classes.duration}><IconCalendarMonth size={18} />Aug 2022 - May 2023</Text> */}
               {/* </div> */}
             </div>
           </div>
