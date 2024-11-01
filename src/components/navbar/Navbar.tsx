@@ -3,25 +3,25 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Tooltip, UnstyledButton, Stack, rem } from '@mantine/core';
-// import { IconDeviceDesktopAnalytics, IconUser, IconPhone, IconCode, IconCertificate, IconBriefcase } from '@tabler/icons-react';
+import { IconDeviceDesktopAnalytics, IconUser, IconPhone, IconCode, IconCertificate, IconBriefcase } from '@tabler/icons-react';
 import { ThemeToggle } from '../themeToggle/ThemeToggle';
 
 import classes from './Navbar.module.css';
 
 interface NavbarLinkProps {
-  // icon: typeof IconUser
+  icon: typeof IconUser
   label: string
   link: string
   active?: boolean
   onClick?(): void
 }
 
-function NavbarLink({  label, link, active, onClick }: NavbarLinkProps) {
+function NavbarLink({ icon: Icon, label, link, active, onClick }: NavbarLinkProps) {
   return (
     <Tooltip label={label} position="right" transitionProps={{ duration: 0 }}>
       <Link href={link}>
         <UnstyledButton onClick={onClick} className={classes.link} data-active={active || undefined}>
-          {/* <Icon style={{ width: rem(20), height: rem(20) }} stroke={1.5} /> */}
+          <Icon style={{ width: rem(20), height: rem(20) }} stroke={1.5} />
         </UnstyledButton>
       </Link>
     </Tooltip>
@@ -29,12 +29,12 @@ function NavbarLink({  label, link, active, onClick }: NavbarLinkProps) {
 }
 
 const menuLinks = [
-  {  link: '/', label: 'About' },
-  {  link: '/experience', label: 'Experience' },
-  {  link: '/skills', label: 'Skills' },
-  {  link: '/certificates', label: 'Certificates' },
-  {  link: '/projects', label: 'Projects' },
-  // { icon: IconPhone, link: '/contact', label: 'Contact' },
+  { icon: IconUser, link: '/', label: 'About' },
+  { icon: IconBriefcase, link: '/experience', label: 'Experience' },
+  { icon: IconCode, link: '/skills', label: 'Skills' },
+  { icon: IconCertificate, link: '/certificates', label: 'Certificates' },
+  { icon: IconDeviceDesktopAnalytics, link: '/projects', label: 'Projects' },
+  { icon: IconPhone, link: '/contact', label: 'Contact' },
 ];
 
 export function Navbar() {
@@ -53,11 +53,11 @@ export function Navbar() {
   return (
     <nav className={classes.navbar}>
       <div className={classes.navbarMain}>
-        {/* {window.innerWidth > 600 ? <Stack justify="center" gap={0}>
+        {window.innerWidth > 600 ? <Stack justify="center" gap={0}>
           {links}
           <ThemeToggle />
-        </Stack> : links} */}
-         {links}
+        </Stack> : <>links <ThemeToggle /></>}
+         {/* {links} */}
       </div>
     </nav>
   );
