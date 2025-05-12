@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { Image, Title, Button, Group, Text } from '@mantine/core';
+import { Button, Group, Image, Text, Title, useMantineColorScheme } from '@mantine/core';
+import { useState } from 'react';
 import CustomScrollArea from '../CustomScrollArea';
 
 import classes from './HeroSection.module.css';
@@ -26,6 +26,7 @@ function useMobile() {
 
 export function HeroSection() {
   const isMobile = useMobile();
+  const theme = useMantineColorScheme();
 
   const content = (
     <section className={classes.heroContainer}>
@@ -33,7 +34,10 @@ export function HeroSection() {
         <div className={classes.content}>
           <Title className={classes.title}>Hi, I&apos;m <span className={classes.highlight}>Riyaz</span></Title>
           <Title className={classes.secondary}>Full Stack Developer</Title>
-          <Text c="dimmed" mt="md">
+          <Text
+            c={theme.colorScheme === 'dark' ? 'gray' : 'gray.7'}
+            mt="md"
+          >
             To leverage my expertise in full-stack development, including React, Node.js, Express, MongoDB, MySQL, PostgreSQL, and TypeScript, to design and build scalable, high-performance web applications. I aim to contribute to a dynamic team by delivering innovative, robust solutions that enhance user experiences and support business growth.
           </Text>
 
