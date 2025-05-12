@@ -1,11 +1,10 @@
 'use client'
 
-import React from 'react'
-import CustomScrollArea from '../CustomScrollArea'
 import { Card, Image, Text } from '@mantine/core'
+import CustomScrollArea from '../CustomScrollArea'
 
+import { IconCalendarMonth } from '@tabler/icons-react'
 import classes from './ExperiencesCard.module.css'
-// import { IconCalendarMonth } from '@tabler/icons-react'
 
 const ExperiencesCard = () => {
   return (
@@ -16,14 +15,17 @@ const ExperiencesCard = () => {
             <div className={classes.imgContainer}>
               <Image src='/assets/images/companies/blaze-logo.png' alt='Blaze' className={classes.image} />
             </div>
+
             <div className={classes.titleSec}>
-              {/* <Text>Blaze Web Services</Text> */}
-              {/* <div className={classes.roleSec}> */}
-              <Text className={classes.role}>Web Developer</Text>
-              {/* <Text className={classes.duration}><IconCalendarMonth size={18} />Aug 2023 - Present</Text> */}
-              {/* </div> */}
+              <div className={classes.roleSec}>
+                <Text className={classes.role}>Web Developer</Text>
+                <Text className={classes.duration}>
+                  <IconCalendarMonth size={18} />Aug 2023 - Feb 2025
+                </Text>
+              </div>
             </div>
           </div>
+
 
           <div className={classes.cardPoints}>
             <ul>
@@ -60,14 +62,15 @@ const ExperiencesCard = () => {
         <Card p="md" radius="md" className={classes.card}>
           <div className={classes.cardTopSec}>
             <div className={classes.imgContainer}>
-              <Image src='/assets/images/companies/designosoft-logo.png' alt='Blaze' className={classes.image} />
+              <Image src='/assets/images/companies/designosoft-logo.png' alt='Designosoft' className={classes.image} />
             </div>
             <div className={classes.titleSec}>
-              {/* <Text>Blaze Web Services</Text> */}
-              {/* <div className={classes.roleSec}> */}
-              <Text className={classes.role}>Front End Developer</Text>
-              {/* <Text className={classes.duration}><IconCalendarMonth size={18} />Aug 2022 - May 2023</Text> */}
-              {/* </div> */}
+              <div className={classes.roleSec}>
+                <Text className={classes.role}>Frontend Developer</Text>
+                <Text className={classes.duration}>
+                  <IconCalendarMonth size={18} />Aug 2022 - May 2023
+                </Text>
+              </div>
             </div>
           </div>
 

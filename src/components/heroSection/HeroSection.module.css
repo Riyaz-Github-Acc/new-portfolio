@@ -48,27 +48,36 @@
   padding: rem(4px) rem(12px);
 }
 
-@media (max-width: $mantine-breakpoint-md) {
-
-  /* .heroContainer { padding: 1rem 0 0; } */
+@media (max-width: 768px) {
   .inner {
     grid-template-columns: 1fr;
-    justify-content: space-between;
-    gap: 1rem;
+    justify-content: center;
+    gap: 1.5rem;
     width: 100%;
   }
 
   .content {
     max-width: 100%;
     margin-right: 0;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    grid-column: auto;
+    justify-self: center;
+    align-self: center;
   }
 }
 
-@media (max-width: $mantine-breakpoint-xs) {
+@media (max-width: 480px) {
 
   .title,
   .secondary {
     font-size: rem(26px);
+    text-align: center;
   }
 
   .control {

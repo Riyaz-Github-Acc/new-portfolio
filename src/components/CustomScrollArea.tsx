@@ -1,31 +1,41 @@
-import React, { useEffect, useState } from 'react'
 import { ScrollArea } from '@mantine/core';
+import React, { useEffect, useState } from 'react';
 
 interface CustomScrollAreaProps {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
-const CustomScrollArea: React.FC<CustomScrollAreaProps> = ({children}) => {
-  const [scrollAreaHeight, setScrollAreaHeight] = useState({ height: 'calc(100vh - 9.5rem)' });
+const CustomScrollArea: React.FC<CustomScrollAreaProps> = ({ children }) => {
+  const [maxHeight, setMaxHeight] = useState('calc(100vh - 9.5rem)');
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     if (window.innerWidth < 600) {
-  //       setScrollAreaHeight({ height: 'calc(100vh - 7.5rem)' });
-  //     } else {
-  //       setScrollAreaHeight({ height: 'calc(100vh - 9.5rem)' });
-  //     }
-  //   };
-  //   window.addEventListener('resize', handleResize);
-  //   handleResize();
-  //   return () => window.removeEventListener('resize', handleResize);
-  // }, []);
-  
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const handleResize = () => {
+      if (window.innerWidth < 600) {
+        setMaxHeight('calc(100vh - 11.5rem)'); // smaller offset on mobile
+      } else {
+        setMaxHeight('calc(100vh - 9.5rem)');
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <ScrollArea style={scrollAreaHeight}>
+    <ScrollArea
+      style={{
+        maxHeight,
+        height: maxHeight, // fix height to enable scrolling
+      }}
+    >
       {children}
     </ScrollArea>
-  )
-}
+  );
+};
 
-export default CustomScrollArea
+export default CustomScrollArea;
