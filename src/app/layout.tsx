@@ -1,9 +1,9 @@
 
-import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import { Navbar } from '@/components/navbar/Navbar';
+import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 
 import '@mantine/core/styles.css';
-import './globals.css'
+import './globals.css';
 
 export const metadata = {
   title: 'Riyaz | Developer Portfolio',
@@ -11,10 +11,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode; }) {
+  const colorScheme = 'dark';
+
   return (
-    <html lang="en">
+    <html lang="en" data-mantine-color-scheme={colorScheme}>
       <head>
-        <ColorSchemeScript />
+        <ColorSchemeScript defaultColorScheme='dark' />
       </head>
       <body>
         <MantineProvider defaultColorScheme="dark">
