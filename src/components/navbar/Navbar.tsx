@@ -1,9 +1,9 @@
 'use client'
 
-import { useState } from 'react';
+import { Stack, Tooltip, UnstyledButton, rem } from '@mantine/core';
+import { IconBriefcase, IconCertificate, IconCode, IconDeviceDesktopAnalytics, IconPhone, IconUser } from '@tabler/icons-react';
 import Link from 'next/link';
-import { Tooltip, UnstyledButton, Stack, rem } from '@mantine/core';
-import { IconDeviceDesktopAnalytics, IconUser, IconPhone, IconCode, IconCertificate, IconBriefcase } from '@tabler/icons-react';
+import { useState } from 'react';
 import { ThemeToggle } from '../themeToggle/ThemeToggle';
 
 import classes from './Navbar.module.css';
@@ -53,11 +53,11 @@ export function Navbar() {
   return (
     <nav className={classes.navbar}>
       <div className={classes.navbarMain}>
-        {window.innerWidth > 600 ? <Stack justify="center" gap={0}>
+        {typeof window !== undefined && window.innerWidth > 600 ? <Stack justify="center" gap={0}>
           {links}
           <ThemeToggle />
         </Stack> : <>links <ThemeToggle /></>}
-         {/* {links} */}
+        {/* {links} */}
       </div>
     </nav>
   );

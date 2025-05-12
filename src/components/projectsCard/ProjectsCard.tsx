@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type JSX } from 'react';
 // import { IconBrandAws, IconBrandDocker, IconBrandJavascript, IconBrandNextjs, IconBrandNodejs, IconBrandReact, IconBrandTypescript, IconBrandGithub, IconHexagonLetterE, IconWorld, IconBrandRedux, IconBrandMongodb, IconBrandTailwind } from '@tabler/icons-react';
 import { ScrollArea, Tooltip } from '@mantine/core';
 import { Card, Image, Text, Group, Badge, Button, ActionIcon } from '@mantine/core';
